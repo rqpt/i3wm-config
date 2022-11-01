@@ -54,6 +54,7 @@ floating_modifier Mod1
 # start a terminal
 bindsym Mod1+Control+5 exec --no-startup-id xfce4-terminal
 bindsym Mod1+Control+2 exec --no-startup-id ticktick
+bindsym Mod1+Control+4 exec --no-startup-id libreoffice
 bindsym Mod1+Control+3 exec --no-startup-id thunderbird
 bindsym Mod1+Control+6 exec --no-startup-id firefox
 bindsym Mod1+Control+0 exec --no-startup-id spotify
@@ -130,7 +131,7 @@ bindsym Mod1+minus scratchpad show
 set $ws1 "1: "
 set $ws2 "2: "
 set $ws3 "3: "
-set $ws4 "4: "
+set $ws4 "4: "
 set $ws5 "5: "
 set $ws6 "6: "
 set $ws7 "7: "
@@ -162,6 +163,7 @@ bindsym Mod1+Shift+8 move container to workspace number $ws8
 bindsym Mod1+Shift+9 move container to workspace number $ws9
 bindsym Mod1+Shift+0 move container to workspace number $ws10
 
+assign [class="libreoffice-startcenter"] $ws4
 assign [class="firefox"] $ws6
 assign [class="Google-chrome"] $ws6
 assign [class="Xfce4-terminal"] $ws5
