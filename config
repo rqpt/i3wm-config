@@ -59,7 +59,7 @@ bindsym Mod1+Control+3 exec --no-startup-id thunderbird
 bindsym Mod1+Control+6 exec --no-startup-id firefox
 bindsym Mod1+Control+0 exec --no-startup-id spotify
 bindsym Mod1+Control+9 exec --no-startup-id steam
-bindsym Mod1+Control+8 exec --no-startup-id transmission-gtk
+bindsym Mod1+Control+8 exec --no-startup-id thunar
 bindsym Mod1+Control+7 exec --no-startup-id google-chrome --app=https://witeboard.com/
 # kill focused window
 bindsym Mod1+q kill
@@ -138,7 +138,7 @@ set $ws4 "4: "
 set $ws5 "5: "
 set $ws6 "6: "
 set $ws7 "7: "
-set $ws8 "8: "
+set $ws8 "8: "
 set $ws9 "9: "
 set $ws10 "10: "
 
@@ -150,7 +150,7 @@ bindsym Mod1+4 workspace number $ws4; exec --no-startup-id [ $(ps h -C libreoffi
 bindsym Mod1+5 workspace number $ws5; exec --no-startup-id [ $(ps h -C xfce4-terminal | wc -l) = 0 ] && xfce4-terminal
 bindsym Mod1+6 workspace number $ws6; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && /usr/bin/firefox -s
 bindsym Mod1+7 workspace number $ws7; exec --no-startup-id [ $(ps h -C google-chrome | wc -l) = 0 ] && google-chrome --app=https://witeboard.com/
-bindsym Mod1+8 workspace number $ws8; exec --no-startup-id [ $(ps h -C transmission-gtk | wc -l) = 0 ] && transmission-gtk
+bindsym Mod1+8 workspace number $ws8; exec --no-startup-id [ $(ps h -C thunar | wc -l) = 0 ] && thunar
 bindsym Mod1+9 workspace number $ws9; exec --no-startup-id [ $(ps h -C steam | wc -l) = 0 ] && /usr/bin/steam -s
 bindsym Mod1+0 workspace number $ws10; exec --no-startup-id [ $(ps h -C spotify | wc -l) = 0 ] && spotify
 
@@ -167,6 +167,7 @@ bindsym Mod1+Shift+9 move container to workspace number $ws9
 bindsym Mod1+Shift+0 move container to workspace number $ws10
 
 assign [class="Steam"] $ws9
+assign [class="Thunar"] $ws8
 assign [class="libreoffice-startcenter"] $ws4
 assign [class="firefox"] $ws6
 assign [class="Google-chrome"] $ws7
