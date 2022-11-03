@@ -144,8 +144,8 @@ set $ws10 "10: "
 bindsym Mod1+1 workspace number $ws1
 bindsym Mod1+2 workspace number $ws2; exec --no-startup-id [ $(ps h -C ticktick | wc -l) = 0 ] && /usr/bin/ticktick -s
 bindsym Mod1+3 workspace number $ws3; exec --no-startup-id [ $(ps h -C thunderbird | wc -l) = 0 ] && /usr/bin/thunderbird -s
-bindsym Mod1+4 workspace number $ws4
-bindsym Mod1+5 workspace number $ws5
+bindsym Mod1+4 workspace number $ws4; exec --no-startup-id [ $(ps h -C libreoffice | wc -l) = 0 ] && libreoffice
+bindsym Mod1+5 workspace number $ws5; exec --no-startup-id [ $(ps h -C xfce4-terminal | wc -l) = 0 ] && xfce4-terminal
 bindsym Mod1+6 workspace number $ws6; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && /usr/bin/firefox -s
 bindsym Mod1+7 workspace number $ws7
 bindsym Mod1+8 workspace number $ws8
