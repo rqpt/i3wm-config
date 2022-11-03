@@ -150,7 +150,7 @@ bindsym Mod1+6 workspace number $ws6; exec --no-startup-id [ $(ps h -C firefox |
 bindsym Mod1+7 workspace number $ws7
 bindsym Mod1+8 workspace number $ws8
 bindsym Mod1+9 workspace number $ws9; exec --no-startup-id [ $(ps h -C steam | wc -l) = 0 ] && /usr/bin/steam -s
-bindsym Mod1+0 workspace number $ws10
+bindsym Mod1+0 workspace number $ws10; exec --no-startup-id [ $(ps h -C spotify | wc -l) = 0 ] && spotify
 
 # move focused container to workspace
 bindsym Mod1+Shift+1 move container to workspace number $ws1
