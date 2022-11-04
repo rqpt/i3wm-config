@@ -175,8 +175,6 @@ assign [class="Transmission-gtk"] $ws8
 assign [class="thunderbird"] $ws3
 assign [class="ticktick"] $ws2
 assign [class="Gimp"] $ws7
-assign [instance="witeboard.com"] $ws7
-assign [instance="open.spotify.com"] $ws10
 for_window [class="^Spotify"] move to workspace $ws10
 
 # reload the configuration file
