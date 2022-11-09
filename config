@@ -134,7 +134,7 @@ bindsym Mod1+minus scratchpad show
 set $ws1 "1: "
 set $ws2 "2: "
 set $ws3 "3: "
-set $ws4 "4: "
+set $ws4 "4: "
 set $ws5 "5: "
 set $ws6 "6: "
 set $ws7 "7: "
@@ -168,8 +168,8 @@ bindsym Mod1+Shift+0 move container to workspace number $ws10
 
 assign [class="Steam"] $ws9
 assign [class="Thunar"] $ws8
-assign [class="libreoffice-startcenter"] $ws4
 assign [class="firefox"] $ws6
+assign [instance="drive.google.com"] $ws4
 assign [instance="witeboard.com"] $ws7
 assign [class="Transmission-gtk"] $ws8
 assign [class="thunderbird"] $ws3
