@@ -53,7 +53,7 @@ floating_modifier Mod1
 
 # start a terminal
 bindsym Mod1+Return exec --no-startup-id xfce4-terminal
-bindsym Mod1+Control+5 exec --no-startup-id code
+bindsym Mod1+Control+4 exec --no-startup-id code
 bindsym Mod1+Control+3 exec --no-startup-id slack
 bindsym Mod1+Control+2 exec --no-startup-id thunderbird
 bindsym Mod1+Control+6 exec --no-startup-id firefox
@@ -134,8 +134,8 @@ bindsym Mod1+minus scratchpad show
 set $ws1 "1: "
 set $ws2 "2: "
 set $ws3 "3: "
-set $ws4 "4: "
-set $ws5 "5: "
+set $ws4 "4: "
+set $ws5 "5: "
 set $ws6 "6: "
 set $ws7 "7: "
 set $ws8 "8: "
@@ -146,8 +146,8 @@ set $ws10 "10: "
 bindsym Mod1+1 workspace number $ws1
 bindsym Mod1+2 workspace number $ws2; exec --no-startup-id [ $(ps h -C thunderbird | wc -l) = 0 ] && /usr/bin/thunderbird -s
 bindsym Mod1+3 workspace number $ws3; exec --no-startup-id [ $(ps h -C slack | wc -l) = 0 ] && slack
-bindsym Mod1+4 workspace number $ws4; exec --no-startup-id [ $(ps h -C xfce4-terminal | wc -l) = 0 ] && xfce4-terminal
-bindsym Mod1+5 workspace number $ws5; exec --no-startup-id [ $(ps h -C code | wc -l) = 0 ] && code
+bindsym Mod1+4 workspace number $ws4; exec --no-startup-id [ $(ps h -C code | wc -l) = 0 ] && code
+bindsym Mod1+5 workspace number $ws5; exec --no-startup-id [ $(ps h -C xfce4-terminal | wc -l) = 0 ] && xfce4-terminal
 bindsym Mod1+6 workspace number $ws6; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && /usr/bin/firefox -s
 bindsym Mod1+7 workspace number $ws7; exec --no-startup-id [ $(ps h -C chrome | grep "witeboard" | wc -l) = 0 ] && google-chrome --app=https://witeboard.com/
 bindsym Mod1+8 workspace number $ws8; exec --no-startup-id [ $(ps h -C thunar | wc -l) = 0 ] && thunar
@@ -168,7 +168,7 @@ bindsym Mod1+Shift+0 move container to workspace number $ws10
 
 assign [class="Thunar"] $ws8
 assign [class="firefox"] $ws6
-assign [class="Code"] $ws5
+assign [class="Code"] $ws4
 assign [instance="witeboard.com"] $ws7
 assign [class="Transmission-gtk"] $ws8
 assign [class="thunderbird"] $ws2
