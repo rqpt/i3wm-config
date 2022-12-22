@@ -72,6 +72,8 @@ bindsym Mod1+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 400 -opaci
 # installed.
 # bindsym Mod1+d exec --no-startup-id i3-dmenu-desktop
 
+bindsym Mod1+Tab workspace back_and_forth
+
 # change focus
 bindsym Mod1+$left focus left
 bindsym Mod1+$down focus down
