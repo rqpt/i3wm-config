@@ -105,12 +105,12 @@ bindsym Mod1+x split h
 # split in vertical orientation
 bindsym Mod1+y split v
 
-bindsym Mod1+s exec --no-startup-id xfce4-screenshooter -r
+bindsym Mod1+p exec --no-startup-id xfce4-screenshooter -r
 # enter fullscreen mode for the focused container
 bindsym Mod1+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-# bindsym Mod1+s layout stacking
+bindsym Mod1+s layout stacking
 bindsym Mod1+w layout tabbed
 bindsym Mod1+e layout toggle split
 
@@ -254,6 +254,7 @@ exec --no-startup-id i3-msg 'workspace $ws6; workspace $ws1'
 exec_always --no-startup-id xmodmap -e "keycode 108 = Alt_R Meta_R Alt_R Meta_R"
 exec_always --no-startup-id xmodmap ~/.speedswapper
 exec --no-startup-id caffeine-indicator
+exec_always --no-startup-id picom -b
 
 workspace $ws1 output HDMI-1
 workspace $ws2 output HDMI-1
