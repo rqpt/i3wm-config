@@ -175,7 +175,6 @@ bindsym Mod1+Shift+9 move container to workspace number $ws9
 bindsym Mod1+Shift+0 move container to workspace number $ws10
 
 for_window [class="Thunar"] fullscreen enable
-for_window [class="firefox"] fullscreen enable
 for_window [class="Code"] fullscreen enable
 for_window [instance="witeboard.com"] fullscreen enable
 for_window [class="Transmission-gtk"] fullscreen enable
@@ -183,7 +182,6 @@ for_window [class="thunderbird"] fullscreen enable
 for_window [class="Gimp"] fullscreen enable
 for_window [class="^Spotify"] fullscreen enable 
 for_window [class="^Slack"] fullscreen enable
-for_window [class="chrome"] fullscreen enable
 
 assign [class="Thunar"] $ws8
 assign [class="firefox"] $ws6
