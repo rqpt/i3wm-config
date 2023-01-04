@@ -59,7 +59,7 @@ bindsym Mod1+Control+2 exec --no-startup-id thunderbird
 bindsym Mod1+Control+6 exec --no-startup-id firefox
 # bindsym Mod1+Control+0 exec --no-startup-id spotify
 bindsym Mod1+Control+8 exec --no-startup-id thunar
-bindsym Mod1+Control+9 exec --no-startup-id dropbox start
+bindsym Mod1+Control+9 exec --no-startup-id google-chrome --app=https://drive.google.com/
 bindsym Mod1+Control+7 exec --no-startup-id google-chrome --app=https://witeboard.com/
 bindsym Mod1+Control+0 exec --no-startup-id google-chrome --app=https://open.spotify.com/
 # kill focused window
@@ -146,7 +146,7 @@ set $ws5 "5: "
 set $ws6 "6: "
 set $ws7 "7: "
 set $ws8 "8: "
-set $ws9 "9: "
+set $ws9 "9: "
 set $ws10 "10: "
 
 # switch to workspace
@@ -158,7 +158,7 @@ bindsym Mod1+5 workspace number $ws5; exec --no-startup-id [ $(ps h -C xfce4-ter
 bindsym Mod1+6 workspace number $ws6; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && /usr/bin/firefox -s
 bindsym Mod1+7 workspace number $ws7; exec --no-startup-id [ $(ps h -C chrome | grep "witeboard" | wc -l) = 0 ] && google-chrome --app=https://witeboard.com/
 bindsym Mod1+8 workspace number $ws8; exec --no-startup-id [ $(ps h -C thunar | wc -l) = 0 ] && thunar
-bindsym Mod1+9 workspace number $ws9; exec --no-startup-id [ $(ps h -C dropbox | wc -l) = 0 ] && dropbox start
+bindsym Mod1+9 workspace number $ws9; exec --no-startup-id [ $(ps h -C chrome | grep "Drive" wc -l) = 0 ] && google-chrome --app=https://drive.google.com/
 bindsym Mod1+0 workspace number $ws10; exec --no-startup-id [ $(ps h -C chrome | grep "spotify" | wc -l) = 0 ] && google-chrome --app=https://open.spotify.com/
 # bindsym Mod1+0 workspace number $ws10; exec --no-startup-id [ $(ps h -C spotify | wc -l) = 0 ] && spotify
 
@@ -180,6 +180,7 @@ for_window [instance="witeboard.com"] fullscreen enable
 for_window [class="Transmission-gtk"] fullscreen enable
 for_window [class="thunderbird"] fullscreen enable
 for_window [class="Gimp"] fullscreen enable
+for_window [instance="drive.google.com"] fullscreen enable
 for_window [class="^Spotify"] fullscreen enable 
 for_window [class="^Slack"] fullscreen enable
 
@@ -191,6 +192,7 @@ assign [class="Transmission-gtk"] $ws8
 assign [class="thunderbird"] $ws2
 assign [class="Gimp"] $ws7
 assign [instance="spotify.com"] $ws10
+assign [instance="drive.google.com"] $ws9
 for_window [class="^Spotify"] move to workspace $ws10
 for_window [class="^Slack"] move to workspace $ws3
 
