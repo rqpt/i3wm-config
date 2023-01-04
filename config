@@ -155,7 +155,7 @@ bindsym Mod1+5 workspace number $ws5; exec --no-startup-id [ $(ps h -C xfce4-ter
 bindsym Mod1+6 workspace number $ws6; exec --no-startup-id [ $(ps h -C firefox | wc -l) = 0 ] && /usr/bin/firefox -s
 bindsym Mod1+7 workspace number $ws7; exec --no-startup-id [ $(ps h -C chrome | grep "witeboard" | wc -l) = 0 ] && google-chrome --app=https://witeboard.com/
 bindsym Mod1+8 workspace number $ws8; exec --no-startup-id [ $(ps h -C thunar | wc -l) = 0 ] && thunar
-bindsym Mod1+9 workspace number $ws9; exec --no-startup-id [ $(ps h -C chrome | grep "drive" wc -l) = 0 ] && google-chrome --app=https://drive.google.com/
+bindsym Mod1+9 workspace number $ws9; exec --no-startup-id [ $(ps h -C chrome | grep "Drive" wc -l) = 0 ] && google-chrome --app=https://drive.google.com/
 bindsym Mod1+0 workspace number $ws10; exec --no-startup-id [ $(ps h -C chrome | grep "spotify" | wc -l) = 0 ] && google-chrome --app=https://open.spotify.com/
 # bindsym Mod1+0 workspace number $ws10; exec --no-startup-id [ $(ps h -C spotify | wc -l) = 0 ] && spotify
 
