@@ -181,6 +181,7 @@ for_window [class="Transmission-gtk"] fullscreen enable
 for_window [class="thunderbird"] fullscreen enable
 for_window [class="Gimp"] fullscreen enable
 for_window [instance="drive.google.com"] fullscreen enable
+for_window [instance="spotify.com"] fullscreen enable
 for_window [class="^Spotify"] fullscreen enable 
 for_window [class="^Slack"] fullscreen enable
 
