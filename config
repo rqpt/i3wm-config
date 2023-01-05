@@ -57,7 +57,6 @@ bindsym Mod1+Control+4 exec --no-startup-id code
 bindsym Mod1+Control+3 exec --no-startup-id slack
 bindsym Mod1+Control+2 exec --no-startup-id thunderbird
 bindsym Mod1+Control+6 exec --no-startup-id firefox
-# bindsym Mod1+Control+0 exec --no-startup-id spotify
 bindsym Mod1+Control+8 exec --no-startup-id thunar
 bindsym Mod1+Control+9 exec --no-startup-id google-chrome --app=https://drive.google.com/
 bindsym Mod1+Control+7 exec --no-startup-id google-chrome --app=https://witeboard.com/
@@ -160,7 +159,6 @@ bindsym Mod1+7 workspace number $ws7; exec --no-startup-id [ $(ps h -C chrome | 
 bindsym Mod1+8 workspace number $ws8; exec --no-startup-id [ $(ps h -C thunar | wc -l) = 0 ] && thunar
 bindsym Mod1+9 workspace number $ws9; exec --no-startup-id [ $(ps h -C chrome | grep "Drive" wc -l) = 0 ] && google-chrome --app=https://drive.google.com/
 bindsym Mod1+0 workspace number $ws10; exec --no-startup-id [ $(ps h -C chrome | grep "spotify" | wc -l) = 0 ] && google-chrome --app=https://open.spotify.com/
-# bindsym Mod1+0 workspace number $ws10; exec --no-startup-id [ $(ps h -C spotify | wc -l) = 0 ] && spotify
 
 # move focused container to workspace
 bindsym Mod1+Shift+1 move container to workspace number $ws1
@@ -182,7 +180,6 @@ for_window [class="thunderbird"] fullscreen enable
 for_window [class="Gimp"] fullscreen enable
 for_window [instance="drive.google.com"] fullscreen enable
 for_window [instance="spotify.com"] fullscreen enable
-for_window [class="^Spotify"] fullscreen enable 
 for_window [class="^Slack"] fullscreen enable
 
 assign [class="Thunar"] $ws8
@@ -194,7 +191,6 @@ assign [class="thunderbird"] $ws2
 assign [class="Gimp"] $ws7
 assign [instance="spotify.com"] $ws10
 assign [instance="drive.google.com"] $ws9
-for_window [class="^Spotify"] move to workspace $ws10
 for_window [class="^Slack"] move to workspace $ws3
 
 # reload the configuration file
@@ -253,8 +249,6 @@ bar {
 		  }
 }
 
-exec_always --no-startup-id feh --bg-scale ~/Pictures/abstract-bg.jpg
-exec --no-startup-id i3-msg 'workspace $ws6; workspace $ws1'
 exec_always --no-startup-id xmodmap -e "keycode 108 = Alt_R Meta_R Alt_R Meta_R"
 exec_always --no-startup-id xmodmap ~/.speedswapper
 exec --no-startup-id caffeine-indicator
