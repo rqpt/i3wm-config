@@ -249,7 +249,7 @@ bar {
 		  }
 }
 
-exec --no-startup-id feh -bg '~/Pictures/abstract-bg.jpg'
+exec_always --no-startup-id feh --bg-scale ~/Pictures/abstract-bg.jpg
 exec_always --no-startup-id picom -b
 exec_always --no-startup-id xmodmap -e "keycode 108 = Alt_R Meta_R Alt_R Meta_R"
 exec_always --no-startup-id xmodmap ~/.speedswapper
