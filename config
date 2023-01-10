@@ -249,11 +249,11 @@ bar {
 		  }
 }
 
-exec_always --no-startup-id xmodmap -e "keycode 108 = Alt_R Meta_R Alt_R Meta_R"
-exec_always --no-startup-id i3-msg 'workspace $ws1'
-exec_always --no-startup-id xmodmap ~/.speedswapper
-exec --no-startup-id caffeine-indicator
+exec --no-startup-id feh -bg '~/Pictures/abstract-bg.jpg'
 exec_always --no-startup-id picom -b
+exec_always --no-startup-id xmodmap -e "keycode 108 = Alt_R Meta_R Alt_R Meta_R"
+exec_always --no-startup-id xmodmap ~/.speedswapper
+exec --no-startup-id i3-msg 'workspace $ws1'
 
 workspace $ws1 output HDMI-1
 workspace $ws2 output HDMI-1
